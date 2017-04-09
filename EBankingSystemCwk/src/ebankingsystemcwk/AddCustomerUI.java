@@ -468,7 +468,7 @@ public class AddCustomerUI extends javax.swing.JFrame {
      * Give action to edit button
      * @param evt 
      */
-    private void editBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editBtnActionPerformed
+    private void editBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editBtnActionPerformed.
         try {
             String cusName=nameTxt.getText();
             String birthdate=birthdateTxt.getText();
