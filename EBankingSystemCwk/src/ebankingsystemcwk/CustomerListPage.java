@@ -192,7 +192,7 @@ add(cusDisplayPanel);
     for(int i=0;i<employeeList.size();i++){
         count++;
            
-                //create jpanel
+                //create jpanel.
                  cusDisplayPanel.setLayout(new GridLayout(count, 4));
                  
                 //JTextArea label1 = new JTextArea("Thamy");
