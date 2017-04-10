@@ -517,7 +517,7 @@ public class AddCustomerUI extends javax.swing.JFrame {
        CustomerListPage listPage=new CustomerListPage();
        setVisible(false);
        listPage.setVisible(true);
-    }//GEN-LAST:event_backBtnActionPerformed
+    }//GEN-LAST:event_backBtnActionPerforme
 
     private void clearText() {
         nameTxt.setText(" ");
