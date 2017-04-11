@@ -189,7 +189,7 @@ int count=0;
     for(int i=0;i<employeeList.size();i++){
         count++;
         
-//                //create jpanel
+//                //create jpanel.
                 empDisplayPanel.setLayout(new GridLayout(count, 4));
                 JTextField employee=new JTextField(employeeList.get(i));  
                 employee.setEditable(false);
