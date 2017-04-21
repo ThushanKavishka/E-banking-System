@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://ebankingCustomer_ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ebankingCustomer_ws/">
+
+<xs:element name="addCustomer" type="tns:addCustomer"/>
+
+<xs:element name="checkAccountNumberField" type="tns:checkAccountNumberField"/>
+
+<xs:element name="checkAccountNumberFieldResponse" type="tns:checkAccountNumberFieldResponse"/>
+
+<xs:element name="deleteCustomer" type="tns:deleteCustomer"/>
+
+<xs:element name="getCustomerList" type="tns:getCustomerList"/>
+
+<xs:element name="getCustomerListResponse" type="tns:getCustomerListResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="parseDouble" type="tns:parseDouble"/>
+
+<xs:element name="parseDoubleResponse" type="tns:parseDoubleResponse"/>
+
+<xs:element name="selectCustomer" type="tns:selectCustomer"/>
+
+<xs:element name="selectCustomerResponse" type="tns:selectCustomerResponse"/>
+
+<xs:element name="updateCustomerDetails" type="tns:updateCustomerDetails"/>
+
+<xs:element name="validateAccountNo" type="tns:validateAccountNo"/>
+
+<xs:element name="validateAccountNoResponse" type="tns:validateAccountNoResponse"/>
+
+<xs:element name="validateCustomer" type="tns:validateCustomer"/>
+
+<xs:element name="validateCustomerResponse" type="tns:validateCustomerResponse"/>
+
+<xs:element name="validateDate" type="tns:validateDate"/>
+
+<xs:element name="validateDateResponse" type="tns:validateDateResponse"/>
+
+<xs:element name="validateFormContents" type="tns:validateFormContents"/>
+
+<xs:element name="validateFormContentsResponse" type="tns:validateFormContentsResponse"/>
+
+<xs:element name="verifyCustomer" type="tns:verifyCustomer"/>
+
+<xs:element name="verifyCustomerResponse" type="tns:verifyCustomerResponse"/>
+
+<xs:complexType name="validateAccountNo">
+<xs:sequence>
+<xs:element name="accNumber" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateAccountNoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateCustomerDetails">
+<xs:sequence>
+<xs:element name="cusName" type="xs:string" minOccurs="0"/>
+<xs:element name="birthdate" type="xs:string" minOccurs="0"/>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+<xs:element name="mobileNo" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="accType" type="xs:string" minOccurs="0"/>
+<xs:element name="accNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="sortCode" type="xs:string" minOccurs="0"/>
+<xs:element name="balance" type="xs:double"/>
+<xs:element name="card" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateDate">
+<xs:sequence>
+<xs:element name="date" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateDateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteCustomer">
+<xs:sequence>
+<xs:element name="accNumber" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCustomerList">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCustomerListResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateCustomer">
+<xs:sequence>
+<xs:element name="accountNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="cusName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="parseDouble">
+<xs:sequence>
+<xs:element name="strNumber" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="parseDoubleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addCustomer">
+<xs:sequence>
+<xs:element name="cusName" type="xs:string" minOccurs="0"/>
+<xs:element name="birthdate" type="xs:string" minOccurs="0"/>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+<xs:element name="mobileNo" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="accType" type="xs:string" minOccurs="0"/>
+<xs:element name="accNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="sortCode" type="xs:string" minOccurs="0"/>
+<xs:element name="balance" type="xs:double"/>
+<xs:element name="card" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectCustomer">
+<xs:sequence>
+<xs:element name="accNumber" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkAccountNumberField">
+<xs:sequence>
+<xs:element name="accountNumber" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkAccountNumberFieldResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verifyCustomer">
+<xs:sequence>
+<xs:element name="accountNumber" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verifyCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateFormContents">
+<xs:sequence>
+<xs:element name="cusName" type="xs:string" minOccurs="0"/>
+<xs:element name="birthdate" type="xs:string" minOccurs="0"/>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+<xs:element name="mobileNo" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="accType" type="xs:string" minOccurs="0"/>
+<xs:element name="accNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="sortCode" type="xs:string" minOccurs="0"/>
+<xs:element name="card" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateFormContentsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
